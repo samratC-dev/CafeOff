@@ -1,37 +1,24 @@
-# Morning Bite
+# Cafe Off
 
-Premium breakfast website built with React + Vite + plain CSS.
+A modern, responsive café website built with React, Vite, and CSS.
 
-## Run Locally
+## Features
+
+- Responsive design with light blue theme
+- Fast loading with Vite
+- Clean and intuitive user interface
+
+## Getting Started
 
 ```bash
 npm install
 npm run dev
 ```
 
-## Contact Email Setup (EmailJS)
+## Environment Configuration
 
-1. Create an account at EmailJS and create:
-   - One email service
-   - One email template
-2. In your template, include these variables:
-   - `{{from_name}}`
-   - `{{from_email}}`
-   - `{{message}}`
-   - `{{to_name}}`
-3. Copy `.env.example` to `.env` and set real values:
+Create a `.env` file in the root directory with required environment variables. See `.env.example` for reference.
 
-```env
-VITE_EMAILJS_SERVICE_ID=your_service_id
-VITE_EMAILJS_TEMPLATE_ID=your_template_id
-VITE_EMAILJS_PUBLIC_KEY=your_public_key
-```
+## Deployment
 
-4. Restart dev server after updating `.env`.
-
-## One-Time Deploy (Vercel/Netlify)
-
-1. Push project to GitHub.
-2. Import repo in Vercel or Netlify.
-3. Add the same `VITE_EMAILJS_*` environment variables in project settings.
-4. Deploy.
+Deploy to your preferred platform (Vercel, Netlify, etc.). Ensure all environment variables are configured in your deployment settings.
