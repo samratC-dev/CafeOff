@@ -1,0 +1,13 @@
+.app {
+  overflow-x: hidden;
+}
+
+main {
+  padding-top: 74px;
+}
+
+@media (max-width: 768px) {
+  main {
+    padding-top: 68px;
+  }
+}

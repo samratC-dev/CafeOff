@@ -1,0 +1,62 @@
+.menu-section {
+  background: linear-gradient(180deg, var(--bg) 0%, var(--bg-alt) 100%);
+}
+
+.menu-grid {
+  margin-top: 2rem;
+  display: grid;
+  gap: 1.2rem;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+}
+
+.menu-card {
+  background: var(--glass);
+  border: 1px solid var(--glass-border);
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 10px 26px rgba(30, 18, 11, 0.08);
+  transition: transform 0.28s ease, box-shadow 0.28s ease, border-color 0.28s ease;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.menu-card:hover {
+  transform: scale(1.02) translateY(-5px);
+  box-shadow: var(--shadow);
+  border-color: var(--accent);
+}
+
+.menu-card img {
+  height: 185px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.menu-card-content {
+  padding: 1rem 1rem 1.2rem;
+}
+
+.menu-category {
+  font-size: 0.82rem;
+  color: var(--primary);
+  margin-bottom: 0.35rem;
+  font-weight: 600;
+}
+
+.menu-card h3 {
+  font-family: "Playfair Display", serif;
+  font-size: 1.4rem;
+  margin-bottom: 0.45rem;
+}
+
+.menu-card p {
+  color: var(--muted);
+  line-height: 1.7;
+  margin-bottom: 0.8rem;
+}
+
+.menu-price {
+  display: inline-block;
+  font-weight: 700;
+  color: var(--primary);
+}

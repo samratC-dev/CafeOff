@@ -1,0 +1,58 @@
+.hero {
+  min-height: calc(100vh - 74px);
+  position: relative;
+  display: flex;
+  align-items: center;
+  background-image: url("https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=2000&q=80");
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    120deg,
+    rgba(31, 20, 13, 0.8),
+    rgba(60, 38, 24, 0.55),
+    rgba(12, 8, 6, 0.75)
+  );
+}
+
+.hero-content {
+  position: relative;
+  color: #fff;
+  max-width: 720px;
+}
+
+.hero-kicker {
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  font-size: 0.82rem;
+  margin-bottom: 0.85rem;
+  color: #f4d6b5;
+}
+
+.hero h1 {
+  font-family: "Playfair Display", serif;
+  font-size: clamp(2.2rem, 6vw, 4.2rem);
+  line-height: 1.1;
+  margin-bottom: 0.9rem;
+}
+
+.hero p {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+  color: #f9ebe0;
+}
+
+.hero-btn {
+  display: inline-block;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    min-height: calc(100vh - 68px);
+  }
+}

@@ -1,0 +1,29 @@
+.footer {
+  padding: 1.5rem 0;
+  border-top: 1px solid var(--border);
+  background-color: var(--surface);
+}
+
+.footer-inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.8rem;
+  color: var(--muted);
+}
+
+.social-links {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.social-links a {
+  color: var(--text);
+  transition: color 0.25s ease;
+}
+
+.social-links a:hover {
+  color: var(--primary);
+}
